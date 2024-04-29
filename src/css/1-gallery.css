@@ -1,0 +1,23 @@
+.gallery {
+  width: 1228px;
+  padding: 24px 50px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 360px;
+  height: 200px;
+  transition: transform 0.25s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
