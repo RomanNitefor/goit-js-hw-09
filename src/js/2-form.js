@@ -26,7 +26,7 @@ const onSubmitFeedbackForm = event => {
   event.preventDefault();
   const formEls = event.currentTarget.elements;
 
-  if (!formEls.email.value || !formEls.message.value) {
+  if (!formEls.email.value.trim() || !formEls.message.value.trim()) {
     alert('Fill all fields, please');
     return;
   }
